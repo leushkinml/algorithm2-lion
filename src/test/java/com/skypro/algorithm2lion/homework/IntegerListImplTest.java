@@ -40,7 +40,7 @@ class IntegerListImplTest {
     }
 
     @Test // addByIndex
-    void testAddItemByIndex() throws WrongIndexException, NullException, SetIsFullException {
+    void testAddItemByIndex() throws WrongIndexException, NullException {
         var array = List.of(101,111, 102,103,104).toArray();
         expected.addByIndex(1, 111);
         array[1] = 111;
